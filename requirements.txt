@@ -1,7 +1,0 @@
-pandas
-matplotlib
-numpy
-streamlit
-squarify
-openpyxl
-math
