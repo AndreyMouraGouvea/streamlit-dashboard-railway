@@ -78,7 +78,7 @@ elif len(dataRailwayFilter) == 0:
     st.warning('Nenhuma viagem encontrada')
     
 else:
-    st.header('DASHBOARD ESTUDO DE VIABILIDADE FERROVIA SANTOS X CAJATI')
+    st.header('DASHBOARD ESTUDO DE VIABILIDADE FERROVIA SÃO PAULO X CURITIBA')
     with open('Ferrovia_Santos_Cajati.html','r',encoding='utf-8') as f:
         htmlData = f.read()
 
