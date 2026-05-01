@@ -4,3 +4,5 @@ numpy
 pathlib
 folium
 streamlit
+squarify
+openpyxl
