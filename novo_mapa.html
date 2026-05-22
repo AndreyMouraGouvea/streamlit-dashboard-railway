@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<style>
+  html, body { width: 100%; height: 100%; margin: 0; padding: 0; }
+  #map_comex { position: relative; width: 100%; height: 100%; }
+  .leaflet-container { font-size: 1rem; }
+</style>
+</head>
+<body>
+<div class="folium-map" id="map_comex"></div>
+<script>
+var map_comex = L.map("map_comex", { center: [-23.0228, -47.0194], zoom: 8, zoomControl: true });
+
+L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  minZoom: 0, maxZoom: 19, maxNativeZoom: 19, noWrap: false,
+  attribution: "&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors",
+  subdomains: "abc"
+}).addTo(map_comex);
+
+var circle_0 = L.circleMarker([-23.555300, -46.612100], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 50.00, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_0.bindTooltip(
+  '<div><b>SAO PAULO/SP</b><br>Valor Movimentado (2025): $ 16.137.023.328<br>Total Empregos: 5.397.235</div>',
+  { "sticky": true }
+);
+
+var circle_1 = L.circleMarker([-23.891600, -46.424000], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 15.02, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_1.bindTooltip(
+  '<div><b>CUBATAO/SP</b><br>Valor Movimentado (2025): $ 1.883.630.325<br>Total Empregos: 33.632</div>',
+  { "sticky": true }
+);
+
+var circle_2 = L.circleMarker([-23.960800, -46.333600], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 39.62, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_2.bindTooltip(
+  '<div><b>SANTOS/SP</b><br>Valor Movimentado (2025): $ 10.449.487.403<br>Total Empregos: 214.142</div>',
+  { "sticky": true }
+);
+
+var circle_3 = L.circleMarker([-23.555771, -46.639557], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 50.00, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_3.bindTooltip(
+  '<div><b>SÃO PAULO, SP</b><br>Valor Movimentado (2025): $ 16.137.023.328<br>Total Empregos: 5.397.235</div>',
+  { "sticky": true }
+);
+
+var circle_4 = L.circleMarker([-23.959220, -46.331779], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 39.62, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_4.bindTooltip(
+  '<div><b>SANTOS, SP</b><br>Valor Movimentado (2025): $ 10.449.487.403<br>Total Empregos: 214.142</div>',
+  { "sticky": true }
+);
+
+var circle_5 = L.circleMarker([-23.701805, -46.553633], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 32.25, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_5.bindTooltip(
+  '<div><b>SÃO BERNARDO DO CAMPO, SP</b><br>Valor Movimentado (2025): $ 7.154.053.339<br>Total Empregos: 299.252</div>',
+  { "sticky": true }
+);
+
+var circle_6 = L.circleMarker([-23.219840, -45.891566], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 32.28, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_6.bindTooltip(
+  '<div><b>SÃO JOSÉ DOS CAMPOS, SP</b><br>Valor Movimentado (2025): $ 7.167.436.290<br>Total Empregos: 228.391</div>',
+  { "sticky": true }
+);
+
+var circle_7 = L.circleMarker([-22.741051, -47.174301], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 32.03, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_7.bindTooltip(
+  '<div><b>PAULÍNIA, SP</b><br>Valor Movimentado (2025): $ 7.067.169.721<br>Total Empregos: 61.854</div>',
+  { "sticky": true }
+);
+
+var circle_8 = L.circleMarker([-22.734443, -47.648031], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 29.63, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_8.bindTooltip(
+  '<div><b>PIRACICABA, SP</b><br>Valor Movimentado (2025): $ 6.135.950.708<br>Total Empregos: 159.489</div>',
+  { "sticky": true }
+);
+
+var circle_9 = L.circleMarker([-23.470905, -47.485149], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 29.68, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_9.bindTooltip(
+  '<div><b>SOROCABA, SP</b><br>Valor Movimentado (2025): $ 6.152.787.905<br>Total Empregos: 255.886</div>',
+  { "sticky": true }
+);
+
+var circle_10 = L.circleMarker([-23.185653, -46.889222], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 27.19, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_10.bindTooltip(
+  '<div><b>JUNDIAÍ, SP</b><br>Valor Movimentado (2025): $ 5.256.279.503<br>Total Empregos: 207.332</div>',
+  { "sticky": true }
+);
+
+var circle_11 = L.circleMarker([-23.459686, -46.532856], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 27.03, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_11.bindTooltip(
+  '<div><b>GUARULHOS, SP</b><br>Valor Movimentado (2025): $ 5.201.286.919<br>Total Empregos: 444.138</div>',
+  { "sticky": true }
+);
+
+var circle_12 = L.circleMarker([-22.905082, -47.061333], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 25.15, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_12.bindTooltip(
+  '<div><b>CAMPINAS, SP</b><br>Valor Movimentado (2025): $ 4.570.082.550<br>Total Empregos: 480.388</div>',
+  { "sticky": true }
+);
+
+var circle_13 = L.circleMarker([-23.503504, -46.878555], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 18.64, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_13.bindTooltip(
+  '<div><b>BARUERI, SP</b><br>Valor Movimentado (2025): $ 2.709.523.302<br>Total Empregos: 402.085</div>',
+  { "sticky": true }
+);
+
+var circle_14 = L.circleMarker([-23.801074, -45.402604], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 18.31, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_14.bindTooltip(
+  '<div><b>SÃO SEBASTIÃO, SP</b><br>Valor Movimentado (2025): $ 2.626.712.672<br>Total Empregos: 24.801</div>',
+  { "sticky": true }
+);
+
+var circle_15 = L.circleMarker([-23.024996, -45.563879], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 18.44, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_15.bindTooltip(
+  '<div><b>TAUBATÉ, SP</b><br>Valor Movimentado (2025): $ 2.658.421.008<br>Total Empregos: 99.443</div>',
+  { "sticky": true }
+);
+
+var circle_16 = L.circleMarker([-23.088201, -47.207959], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 17.14, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_16.bindTooltip(
+  '<div><b>INDAIATUBA, SP</b><br>Valor Movimentado (2025): $ 2.349.154.771<br>Total Empregos: 97.593</div>',
+  { "sticky": true }
+);
+
+var circle_17 = L.circleMarker([-21.835704, -48.493040], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 17.47, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_17.bindTooltip(
+  '<div><b>GAVIÃO PEIXOTO, SP</b><br>Valor Movimentado (2025): $ 2.424.562.844<br>Total Empregos: 4.958</div>',
+  { "sticky": true }
+);
+
+var circle_18 = L.circleMarker([-22.926391, -45.462045], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 15.06, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_18.bindTooltip(
+  '<div><b>PINDAMONHANGABA, SP</b><br>Valor Movimentado (2025): $ 1.891.699.964<br>Total Empregos: 42.277</div>',
+  { "sticky": true }
+);
+
+var circle_19 = L.circleMarker([-23.891821, -46.424839], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 15.02, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_19.bindTooltip(
+  '<div><b>CUBATÃO, SP</b><br>Valor Movimentado (2025): $ 1.883.630.325<br>Total Empregos: 33.632</div>',
+  { "sticky": true }
+);
+
+var circle_20 = L.circleMarker([-23.816591, -45.366793], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 15.02, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_20.bindTooltip(
+  '<div><b>ILHABELA, SP</b><br>Valor Movimentado (2025): $ 1.883.632.819<br>Total Empregos: 11.265</div>',
+  { "sticky": true }
+);
+
+var circle_21 = L.circleMarker([-23.605925, -46.926502], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 14.66, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_21.bindTooltip(
+  '<div><b>COTIA, SP</b><br>Valor Movimentado (2025): $ 1.808.144.177<br>Total Empregos: 93.143</div>',
+  { "sticky": true }
+);
+
+var circle_22 = L.circleMarker([-23.026347, -46.981871], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 13.77, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_22.bindTooltip(
+  '<div><b>VINHEDO, SP</b><br>Valor Movimentado (2025): $ 1.632.531.168<br>Total Empregos: 43.652</div>',
+  { "sticky": true }
+);
+
+var circle_23 = L.circleMarker([-22.803652, -45.185901], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 13.55, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_23.bindTooltip(
+  '<div><b>GUARATINGUETÁ, SP</b><br>Valor Movimentado (2025): $ 1.590.381.598<br>Total Empregos: 35.526</div>',
+  { "sticky": true }
+);
+
+var circle_24 = L.circleMarker([-23.335852, -46.840144], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 13.01, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_24.bindTooltip(
+  '<div><b>CAJAMAR, SP</b><br>Valor Movimentado (2025): $ 1.488.170.754<br>Total Empregos: 60.716</div>',
+  { "sticky": true }
+);
+
+var circle_25 = L.circleMarker([-22.598810, -48.792380], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 12.20, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_25.bindTooltip(
+  '<div><b>LENÇÓIS PAULISTA, SP</b><br>Valor Movimentado (2025): $ 1.342.976.929<br>Total Empregos: 35.178</div>',
+  { "sticky": true }
+);
+
+var circle_26 = L.circleMarker([-21.601268, -48.361357], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 13.09, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_26.bindTooltip(
+  '<div><b>MATÃO, SP</b><br>Valor Movimentado (2025): $ 1.504.246.612<br>Total Empregos: 36.438</div>',
+  { "sticky": true }
+);
+
+var circle_27 = L.circleMarker([-22.824412, -47.270779], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 12.86, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_27.bindTooltip(
+  '<div><b>SUMARÉ, SP</b><br>Valor Movimentado (2025): $ 1.460.660.431<br>Total Empregos: 75.421</div>',
+  { "sticky": true }
+);
+
+var circle_28 = L.circleMarker([-23.649808, -46.853280], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 12.00, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_28.bindTooltip(
+  '<div><b>EMBU, SP</b><br>Valor Movimentado (2025): $ 1.309.022.162<br>Total Empregos: 0</div>',
+  { "sticky": true }
+);
+
+var circle_29 = L.circleMarker([-22.583818, -47.409757], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 11.93, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_29.bindTooltip(
+  '<div><b>LIMEIRA, SP</b><br>Valor Movimentado (2025): $ 1.296.540.537<br>Total Empregos: 106.366</div>',
+  { "sticky": true }
+);
+
+var circle_30 = L.circleMarker([-22.857347, -47.221056], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 11.89, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_30.bindTooltip(
+  '<div><b>HORTOLÂNDIA, SP</b><br>Valor Movimentado (2025): $ 1.288.822.789<br>Total Empregos: 60.757</div>',
+  { "sticky": true }
+);
+
+var circle_31 = L.circleMarker([-22.012329, -47.890826], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 11.76, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_31.bindTooltip(
+  '<div><b>SÃO CARLOS, SP</b><br>Valor Movimentado (2025): $ 1.267.155.108<br>Total Empregos: 96.447</div>',
+  { "sticky": true }
+);
+
+var circle_32 = L.circleMarker([-23.537526, -46.309244], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 11.73, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_32.bindTooltip(
+  '<div><b>SUZANO, SP</b><br>Valor Movimentado (2025): $ 1.261.471.589<br>Total Empregos: 73.103</div>',
+  { "sticky": true }
+);
+
+var circle_33 = L.circleMarker([-23.993937, -46.257457], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 11.18, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_33.bindTooltip(
+  '<div><b>GUARUJÁ, SP</b><br>Valor Movimentado (2025): $ 1.171.069.988<br>Total Empregos: 56.232</div>',
+  { "sticky": true }
+);
+
+var circle_34 = L.circleMarker([-23.687669, -46.493085], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 11.09, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_34.bindTooltip(
+  '<div><b>SANTO ANDRÉ, SP</b><br>Valor Movimentado (2025): $ 1.156.000.010<br>Total Empregos: 245.099</div>',
+  { "sticky": true }
+);
+
+var circle_35 = L.circleMarker([-23.550757, -46.938812], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 10.81, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_35.bindTooltip(
+  '<div><b>ITAPEVI, SP</b><br>Valor Movimentado (2025): $ 1.110.227.533<br>Total Empregos: 48.932</div>',
+  { "sticky": true }
+);
+
+var circle_36 = L.circleMarker([-23.616443, -46.567958], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 11.06, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_36.bindTooltip(
+  '<div><b>SÃO CAETANO DO SUL, SP</b><br>Valor Movimentado (2025): $ 1.151.215.810<br>Total Empregos: 124.475</div>',
+  { "sticky": true }
+);
+
+var circle_37 = L.circleMarker([-21.673279, -49.747061], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 10.88, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_37.bindTooltip(
+  '<div><b>LINS, SP</b><br>Valor Movimentado (2025): $ 1.121.891.038<br>Total Empregos: 32.846</div>',
+  { "sticky": true }
+);
+
+var circle_38 = L.circleMarker([-23.155839, -47.056540], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 10.80, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_38.bindTooltip(
+  '<div><b>ITUPEVA, SP</b><br>Valor Movimentado (2025): $ 1.109.745.757<br>Total Empregos: 34.750</div>',
+  { "sticky": true }
+);
+
+var circle_39 = L.circleMarker([-22.349115, -48.778467], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 10.53, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_39.bindTooltip(
+  '<div><b>PEDERNEIRAS, SP</b><br>Valor Movimentado (2025): $ 1.066.163.268<br>Total Empregos: 14.281</div>',
+  { "sticky": true }
+);
+
+var circle_40 = L.circleMarker([-23.302918, -45.967452], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 10.49, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_40.bindTooltip(
+  '<div><b>JACAREÍ, SP</b><br>Valor Movimentado (2025): $ 1.059.917.678<br>Total Empregos: 65.579</div>',
+  { "sticky": true }
+);
+
+var circle_41 = L.circleMarker([-22.704227, -46.984895], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 10.14, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_41.bindTooltip(
+  '<div><b>JAGUARIÚNA, SP</b><br>Valor Movimentado (2025): $ 1.005.984.094<br>Total Empregos: 40.193</div>',
+  { "sticky": true }
+);
+
+var circle_42 = L.circleMarker([-23.263630, -47.301088], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 10.61, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_42.bindTooltip(
+  '<div><b>ITU, SP</b><br>Valor Movimentado (2025): $ 1.079.033.373<br>Total Empregos: 69.396</div>',
+  { "sticky": true }
+);
+
+var circle_43 = L.circleMarker([-22.738030, -47.334022], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 10.12, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_43.bindTooltip(
+  '<div><b>AMERICANA, SP</b><br>Valor Movimentado (2025): $ 1.003.586.181<br>Total Empregos: 88.780</div>',
+  { "sticky": true }
+);
+
+var circle_44 = L.circleMarker([-21.774276, -48.174240], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 10.13, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_44.bindTooltip(
+  '<div><b>ARARAQUARA, SP</b><br>Valor Movimentado (2025): $ 1.005.229.674<br>Total Empregos: 89.191</div>',
+  { "sticky": true }
+);
+
+var circle_45 = L.circleMarker([-20.709609, -48.531825], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 9.98, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_45.bindTooltip(
+  '<div><b>COLINA, SP</b><br>Valor Movimentado (2025): $ 982.549.120<br>Total Empregos: 8.006</div>',
+  { "sticky": true }
+);
+
+var circle_46 = L.circleMarker([-23.533385, -46.791457], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 9.34, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_46.bindTooltip(
+  '<div><b>OSASCO, SP</b><br>Valor Movimentado (2025): $ 888.396.033<br>Total Empregos: 252.765</div>',
+  { "sticky": true }
+);
+
+var circle_47 = L.circleMarker([-21.537157, -49.858938], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 9.48, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_47.bindTooltip(
+  '<div><b>PROMISSÃO, SP</b><br>Valor Movimentado (2025): $ 908.418.133<br>Total Empregos: 11.483</div>',
+  { "sticky": true }
+);
+
+var circle_48 = L.circleMarker([-21.169402, -47.811085], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 8.87, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_48.bindTooltip(
+  '<div><b>RIBEIRÃO PRETO, SP</b><br>Valor Movimentado (2025): $ 822.432.964<br>Total Empregos: 280.228</div>',
+  { "sticky": true }
+);
+
+var circle_49 = L.circleMarker([-22.969117, -46.995818], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 9.32, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_49.bindTooltip(
+  '<div><b>VALINHOS, SP</b><br>Valor Movimentado (2025): $ 885.956.774<br>Total Empregos: 49.487</div>',
+  { "sticky": true }
+);
+
+var circle_50 = L.circleMarker([-23.011634, -46.837590], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 8.64, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_50.bindTooltip(
+  '<div><b>ITATIBA, SP</b><br>Valor Movimentado (2025): $ 791.064.698<br>Total Empregos: 42.540</div>',
+  { "sticky": true }
+);
+
+var circle_51 = L.circleMarker([-23.115587, -46.553207], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 8.00, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_51.bindTooltip(
+  '<div><b>ATIBAIA, SP</b><br>Valor Movimentado (2025): $ 707.961.153<br>Total Empregos: 54.417</div>',
+  { "sticky": true }
+);
+
+var circle_52 = L.circleMarker([-23.687992, -46.625180], {
+  "bubblingMouseEvents": true, "color": "#3186cc",
+  "dashArray": null, "dashOffset": null, "fill": true,
+  "fillColor": "#3186cc", "fillOpacity": 0.6,
+  "radius": 8.57, "stroke": true, "weight": 2
+}).addTo(map_comex);
+
+circle_52.bindTooltip(
+  '<div><b>DIADEMA, SP</b><br>Valor Movimentado (2025): $ 782.830.533<br>Total Empregos: 108.019</div>',
+  { "sticky": true }
+);
+
+// Original Railway Route
+var originalRoute = L.polyline(
+  [[-23.5553, -46.6121], [-23.8916, -46.424], [-23.9608, -46.3336], [-23.9631, -46.3919], [-24.0058, -46.4028], [-24.0948, -46.6208], [-24.1856, -46.7889], [-24.3129, -47.0012], [-24.2892, -47.1744], [-24.2747, -47.2328], [-24.2814, -47.4625], [-24.3208, -47.6347], [-24.4971, -47.8449], [-24.6925, -48.0022], [-24.7358, -48.1228], [-25.430549900274357, -49.26646496726389]],
+  { "bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "orange", "fillOpacity": 0.2, "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 5 }
+).addTo(map_comex);
+
+originalRoute.bindTooltip("<b>Rota Original</b><br>Ferrovia Santos-Cajati", { "sticky": true });
+
+// Connection to Jundiaí
+var connToJundiai = L.polyline(
+  [[-23.5553, -46.6121], [-23.1856528, -46.8892222]],
+  { "bubblingMouseEvents": true, "color": "#E63946", "dashArray": "6, 4", "dashOffset": null, "fill": false, "lineCap": "round", "lineJoin": "round", "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 4 }
+).addTo(map_comex);
+
+connToJundiai.bindTooltip("<b>Conexão SP → Jundiaí</b>", { "sticky": true });
+
+// Specific Route: Jundiaí → Vinhedo → Valinhos → Campinas → Paulínia
+var specificRoute = L.polyline(
+  [[-23.1856528, -46.8892222], [-23.0263471, -46.9818714], [-22.9691172, -46.9958185], [-22.9050824, -47.0613327], [-22.7410508, -47.1743005]],
+  { "bubblingMouseEvents": true, "color": "#E63946", "dashArray": null, "dashOffset": null, "fill": false, "lineCap": "round", "lineJoin": "round", "opacity": 0.9, "smoothFactor": 1.0, "stroke": true, "weight": 5 }
+).addTo(map_comex);
+
+specificRoute.bindTooltip("<b>Rota Estratégica</b><br>Jundiaí → Vinhedo → Valinhos → Campinas → Paulínia", { "sticky": true });
+
+// Branch to São José dos Campos
+var sjcBranch = L.polyline(
+  [[-23.5553, -46.6121], [-23.4596858, -46.5328559], [-23.2198396, -45.8915658]],
+  { "bubblingMouseEvents": true, "color": "#FF6B6B", "dashArray": "8, 6", "dashOffset": null, "fill": false, "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4 }
+).addTo(map_comex);
+
+sjcBranch.bindTooltip("<b>Ramal Leste</b><br>São Paulo → Guarulhos → São José dos Campos", { "sticky": true });
+
+// Interior Branch to Ribeirão Preto
+var interiorRoute = L.polyline(
+  [[-22.7410508, -47.1743005], [-22.5838179, -47.4097569], [-22.0123291, -47.8908261], [-21.7742763, -48.1742397], [-21.1694018, -47.8110855]],
+  { "bubblingMouseEvents": true, "color": "#FF6B6B", "dashArray": "8, 6", "dashOffset": null, "fill": false, "lineCap": "round", "lineJoin": "round", "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 4 }
+).addTo(map_comex);
+
+interiorRoute.bindTooltip("<b>Ramal Interior</b><br>Paulínia → Limeira → São Carlos → Araraquara → Ribeirão Preto", { "sticky": true });
+
+// Branch Routes (P-Median)
+var branch_0 = L.polyline(
+  [[-23.4596858, -46.5328559], [-23.024996, -45.5638792]],
+  { "bubblingMouseEvents": true, "color": "#FFB3B3", "dashArray": "5, 5", "dashOffset": null, "fill": false, "lineCap": "round", "lineJoin": "round", "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2 }
+).addTo(map_comex);
+
+branch_0.bindTooltip("<b>Ramal: TAUBATÉ, SP</b><br>7 cidades", { "sticky": true });
+
+var branch_1 = L.polyline(
+  [[-23.5553, -46.6121], [-23.6879922, -46.6251796]],
+  { "bubblingMouseEvents": true, "color": "#FFB3B3", "dashArray": "5, 5", "dashOffset": null, "fill": false, "lineCap": "round", "lineJoin": "round", "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2 }
+).addTo(map_comex);
+
+branch_1.bindTooltip("<b>Ramal: DIADEMA, SP</b><br>11 cidades", { "sticky": true });
+
+var branch_2 = L.polyline(
+  [[-22.7410508, -47.1743005], [-22.8573469, -47.22105639999999]],
+  { "bubblingMouseEvents": true, "color": "#FFB3B3", "dashArray": "5, 5", "dashOffset": null, "fill": false, "lineCap": "round", "lineJoin": "round", "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2 }
+).addTo(map_comex);
+
+branch_2.bindTooltip("<b>Ramal: HORTOLÂNDIA, SP</b><br>9 cidades", { "sticky": true });
+
+var branch_3 = L.polyline(
+  [[-23.1856528, -46.8892222], [-23.470905, -47.4851488]],
+  { "bubblingMouseEvents": true, "color": "#FFB3B3", "dashArray": "5, 5", "dashOffset": null, "fill": false, "lineCap": "round", "lineJoin": "round", "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2 }
+).addTo(map_comex);
+
+branch_3.bindTooltip("<b>Ramal: SOROCABA, SP</b><br>2 cidades", { "sticky": true });
+
+var branch_4 = L.polyline(
+  [[-22.7410508, -47.1743005], [-21.8357036, -48.4930404]],
+  { "bubblingMouseEvents": true, "color": "#FFB3B3", "dashArray": "5, 5", "dashOffset": null, "fill": false, "lineCap": "round", "lineJoin": "round", "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2 }
+).addTo(map_comex);
+
+branch_4.bindTooltip("<b>Ramal: GAVIÃO PEIXOTO, SP</b><br>7 cidades", { "sticky": true });
+
+var branch_5 = L.polyline(
+  [[-23.1856528, -46.8892222], [-23.1856528, -46.8892222]],
+  { "bubblingMouseEvents": true, "color": "#FFB3B3", "dashArray": "5, 5", "dashOffset": null, "fill": false, "lineCap": "round", "lineJoin": "round", "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2 }
+).addTo(map_comex);
+
+branch_5.bindTooltip("<b>Ramal: JUNDIAÍ, SP</b><br>6 cidades", { "sticky": true });
+
+var legend = L.control({position: "bottomright"});
+legend.onAdd = function(map) {
+  var div = L.DomUtil.create("div", "info legend");
+  div.style.padding = "10px";
+  div.style.background = "rgba(255,255,255,0.9)";
+  div.style.borderRadius = "5px";
+  div.innerHTML = "<h4 style=\"margin:0 0 5px\">Legenda</h4>" +
+    "<i style=\"background:orange;width:18px;height:4px;display:inline-block;margin-right:8px\"></i> Rota Original<br>" +
+    "<i style=\"background:#E63946;width:18px;height:4px;display:inline-block;margin-right:8px\"></i> Rotas Estratégicas<br>" +
+    "<i style=\"background:#FF6B6B;width:18px;height:2px;display:inline-block;margin-right:8px;border-top:2px dashed #FF6B6B\"></i> Ramais<br>" +
+    "<i style=\"background:#3186cc;width:10px;height:10px;border-radius:50%;display:inline-block;margin-right:8px\"></i> Cidades COMEX";
+  return div;
+};
+legend.addTo(map_comex);
+</script>
+</body>
+</html>
