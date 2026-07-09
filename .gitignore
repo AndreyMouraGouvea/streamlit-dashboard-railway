@@ -1,0 +1,11 @@
+# Shapefiles
+rodovias estaduais/
+rodovias federais/
+sp_boundary.geojson
+
+# Python cache
+__pycache__/
+_tmp_sp_shp/
+
+# Mapas gerados (regeneraveis)
+mapa_*.png
