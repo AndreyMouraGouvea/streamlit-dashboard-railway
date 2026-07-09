@@ -9,3 +9,6 @@ _tmp_sp_shp/
 
 # Mapas gerados (regeneraveis)
 mapa_*.png
+
+# Videos
+video_*.mp4
